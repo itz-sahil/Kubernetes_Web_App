@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Kubernetes Commands</title>
+</head>
+<body style="background-color: rgb(71, 156, 135);">
+    <nav id="nav_bar">
+            <a href="#">
+                <img src="logo.png" width="22%">
+            </a>
+        </nav>   
+    <section id="button_sec">
+        <a href="#output"><button class="ubtn" onclick="start()">Start Minikube</button></a>
+        <a href="#output"><button class="ubtn" onclick="listPod()">List Pods</button></a>
+        <a href="#output"><button class="ubtn" onclick="listDeploy()">List Deployement</button></a>
+        <a href="#output"><button class="ubtn" onclick="listService()">List svc</button></a>
+        <a href="#output"><button class="ubtn" onclick="delAll()">Delete all Sources</button></a>
+        <a href="#output"><button class="ubtn" onclick="stop()">Stop Minikube</button></a>
+    </section>
+    <hr>
+    <section id="forms_sec">
+        <form action="#">
+            <label for="podname">Enter Pod Name:</label><br>
+            <input type="text" id="podname"><br>
+            <label for="imagename">Enter Image Name:</label><br>
+            <input type="text" id="imagename"><br>
+            <button type="reset" class="btn" onclick="launchPod()">Launch</button>
+        </form>
+        <form action="#">
+            <label for="depname">Enter Deployement Name:</label><br>
+            <input type="text" id="depname" ><br>
+            <label for="depimage">Enter Image Name:</label><br>
+            <input type="text" id="depimage" ><br>
+            <button type="reset" class="btn" onclick="launchDeploy()">Launch</button>
+        </form>
+        <form action="#">
+            <label for="delpod">Enter Pod Name:</label><br>
+            <input type="text" id="delpod" ><br>
+            <button type="reset" class="btn" onclick="delPod()">Delete</button>
+        </form>
+        <form action="#">
+            <label for="expdep">Enter Deployement Name:</label><br>
+            <input type="text" id="expdep"><br>
+            <button type="reset" class="btn" onclick="expose()">Expose</button>
+            <button type="reset" class="btn" id="sub_del" onclick="delDeploy()">Delete</button>
+            </div>
+        </form>
+        <form action="#">
+            <label for="repdep">Enter Deployement Name:</label><br>
+            <input type="text" id="repdep"><br>
+            <label for="rep_no">Enter No. of Replicas:</label><br>
+            <input type="text" id="rep_no"><br>
+            <button type="reset" class="btn" onclick="scaleReplica()">Scale</button>
+        </form>
+    </section>
+    <hr>
+    <section id="output_sec">
+        <h1>Output will be displayed below
+            <i class="fa fa-hand-o-down" style="font-size:36px"></i>
+        </h1>
+        <pre>
+	        <h2 id="output" style="border: 0px;color: black;text-align: justify;word-wrap: break-word;font-family: 'Courier New', Courier, monospace;"></h2> 
+ 	    </pre>
+    </section>
+</body>
+</html>

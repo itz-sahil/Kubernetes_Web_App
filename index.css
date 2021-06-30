@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav_bar{
+    margin-bottom: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#nav_bar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(171, 219, 207);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+#button_sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(71, 156, 135);
+    padding: 25px;
+    margin-bottom: 1px;
+}
+.ubtn{
+    font-family: Libre Baskerville;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    animation-name: inc;
+    animation-duration: 1.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes inc {
+    from{
+        padding: 2px;
+        margin:2px;
+        font-size: 5px;
+        font-weight: lighter;
+    }
+    to{
+    padding: 12px;
+    margin: 10px 30px;
+    font-size: 23px;
+    font-weight: normal;
+    }
+}
+.btn{
+    font-weight: normal;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+    position: relative;
+    color: white;
+    width: 100%;
+    font-family: Libre Baskerville;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 4px;
+    animation-name: xyz;
+    animation-duration: 1.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-in-out;
+}
+@keyframes xyz {
+    from{
+        padding: 2px;
+        font-size: 50%;
+        font-weight: normal;
+    }   
+    to{
+        padding: 5px;
+        font-size: 120%;
+        font-weight: bold;
+    } 
+}
+#forms_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    background-color: rgb(71, 156, 135);
+    padding: 20px;
+    margin-bottom: 1px;
+}
+#forms_sec form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 18px;
+    margin: 22px;
+    box-shadow: 2px 2px 8px black;
+    align-items: center;
+    border-radius: 5px;
+}
+#forms_sec label{
+    font-family: Libre Baskerville;
+    font-size: 105%;
+    font-weight: bold;
+    color: white;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    font-family: Libre Baskerville;
+    font-size: 120%;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 4px;
+}
+input[type="text"]:focus{
+    background-color: rgb(216, 215, 215);
+}
+#sub_del{
+    margin-top: 7px;
+}
+#output_sec{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(71, 156, 135);
+}
+#output_sec h1{
+    font-size: 45px;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+    color:white;
+}
+.btn:hover{
+    transition: 0.8s;
+    background-color: whitesmoke;
+    color: black;
+}
+.ubtn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+form:hover{
+    transition: 6s;
+    background-color: rgb(48, 46, 46);
+}
